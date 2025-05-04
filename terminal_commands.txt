@@ -1,0 +1,4 @@
+cd "Elijah's Ship"
+dir
+npm run
+npm run dev
