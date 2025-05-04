@@ -1,4 +1,36 @@
 @import "tailwindcss";
-@plugin "daisyui" {
-  themes: synthwave --default, synthwave --prefersdark, nord --preferslight;
+@plugin "daisyui/theme" {
+  name: "nightboss";
+  default: true;
+  prefersdark: false;
+  color-scheme: "dark";
+  --color-base-100: oklch(13% 0.028 261.692);
+  --color-base-200: oklch(21% 0.034 264.665);
+  --color-base-300: oklch(27% 0.033 256.848);
+  --color-base-content: oklch(96% 0.003 264.542);
+  --color-primary: oklch(37% 0.146 265.522);
+  --color-primary-content: oklch(97% 0.013 236.62);
+  --color-secondary: oklch(42% 0.199 265.638);
+  --color-secondary-content: oklch(98% 0.022 95.277);
+  --color-accent: oklch(0% 0 0);
+  --color-accent-content: oklch(100% 0 0);
+  --color-neutral: oklch(37% 0.034 259.733);
+  --color-neutral-content: oklch(98% 0.002 247.839);
+  --color-info: oklch(48% 0.243 264.376);
+  --color-info-content: oklch(97% 0.013 236.62);
+  --color-success: oklch(72% 0.219 149.579);
+  --color-success-content: oklch(98% 0.018 155.826);
+  --color-warning: oklch(79% 0.184 86.047);
+  --color-warning-content: oklch(98% 0.026 102.212);
+  --color-error: oklch(50% 0.213 27.518);
+  --color-error-content: oklch(97% 0.014 343.198);
+  --radius-selector: 0.25rem;
+  --radius-field: 1rem;
+  --radius-box: 2rem;
+  --size-selector: 0.25rem;
+  --size-field: 0.25rem;
+  --border: 1px;
+  --depth: 0;
+  --noise: 0;
+  themes: nightboss --default, nightboss --prefersdark, nord --preferslight;
 }
