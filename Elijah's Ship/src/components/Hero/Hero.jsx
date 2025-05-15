@@ -13,23 +13,24 @@ export default function Hero() {
     useLayoutEffect(() => {
         const split = SplitText.create(titleRef.current, {
             type: 'chars,words,lines'
-          })
+        });
 
-        const tl = gsap.timeline()
+        const tl = gsap.timeline();
 
         tl.from(split.chars, {
-            x: 150,
-            opacity: 0,
-            duration: 0.7,
-            ease: 'power4.out',
-            stagger: 0.04
-          })
+        x: 150,
+        opacity: 0,
+        duration: 0.7,
+        ease: 'power4.out',
+        stagger: 0.04
+        })
+        
 
-          return () => {
-            split.revert()
-            tl.kill()
-          }
-        }, [])
+        return () => {
+            split.revert();
+            tl.kill();
+        };
+    }, [])
       
     return (
         <div className="hero bg-base-200 min-h-screen">
@@ -38,10 +39,10 @@ export default function Hero() {
                 <h1 ref={titleRef} className="text-5xl font-bold">
                     Elijah's Ship
                 </h1>
-                <p className="py-6">
+                <p ref={descRef} className="py-6">
                     AKA: My website portfolio :]<br />
                 </p>
-                <button className="btn btn-primary">About Me</button>
+                <button ref={btnRef} className="btn btn-primary">About Me</button>
                 </div>
             </div>
         </div>

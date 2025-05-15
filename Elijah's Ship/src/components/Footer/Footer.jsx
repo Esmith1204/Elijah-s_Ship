@@ -28,7 +28,9 @@ export default function Footer() {
             <nav>
                 <div className="grid grid-flow-col gap-4">
                 <a
-                    href="https://www.linkedin.com/in/elijah-smith-71319429a/">
+                    href="https://www.linkedin.com/in/elijah-smith-71319429a/"
+                    className='transition duration-300 ease-in-out hover:scale-110'
+                >
                     <img
                         src={linkedin}
                         alt="Elijah's Ship image"
@@ -38,7 +40,9 @@ export default function Footer() {
                     />
                 </a>
                 <a
-                    href="https://github.com/Esmith1204">
+                    href="https://github.com/Esmith1204"
+                    className='transition duration-300 ease-in-out hover:scale-110'
+                >
                     <img
                         src={github}
                         alt="Elijah's Ship image"
@@ -48,17 +52,21 @@ export default function Footer() {
                     />
                 </a>
                 <a
-                    href="https://www.tiktok.com/@swrd.fsh">
+                    href="https://www.tiktok.com/@swrd.fsh"
+                    className='transition duration-300 ease-in-out hover:scale-110'
+                >
                     <img
                         src={tiktok}
                         alt="Elijah's Ship image"
-                        width={30}
-                        height={30}
+                        width={32}
+                        height={32}
                         className="rounded-full"
                     />
                 </a>
                 <a
-                    href="https://www.instagram.com/elijah._s/">
+                    href="https://www.instagram.com/elijah._s/"
+                    className='transition duration-300 ease-in-out hover:scale-110'
+                >    
                     <img
                         src={instagram}
                         alt="Elijah's Ship image"

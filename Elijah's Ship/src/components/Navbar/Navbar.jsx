@@ -4,7 +4,7 @@ export default function Navbar() {
     return (
         <div className="navbar bg-base-100 shadow-sm">
         <div className="flex-1">
-            <a className="btn btn-ghost text-xl">Elijah's Ship</a>
+            <a className="btn btn-ghost text-xl font-bold text-2xl">Elijah's Ship</a>
         </div>
         <div className="flex-none">
             <ul className="menu menu-horizontal px-1">
@@ -13,7 +13,7 @@ export default function Navbar() {
                 <details>
                 <summary>More</summary>
                 <ul className="bg-base-100 rounded-t-none p-2">
-                    <li><a>Experience</a></li>
+                    <li><a>Resume</a></li>
                     <li><a>Projects</a></li>
                 </ul>
                 </details>
