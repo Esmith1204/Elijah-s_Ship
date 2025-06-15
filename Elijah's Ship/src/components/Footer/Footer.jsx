@@ -9,7 +9,7 @@ import instagram from '../../assets/instagram.png';
 
 export default function Footer() {
     return (
-        <footer className="footer footer-horizontal footer-center bg-primary text-primary-content p-10">
+        <footer className="footer footer-horizontal footer-center bg-primary text-primary-content p-1">
             <aside>
                 <img
                     src={image}
